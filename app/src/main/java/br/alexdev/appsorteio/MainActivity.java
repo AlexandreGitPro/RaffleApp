@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void alterText(View view){
-        TextView textView = findViewById(R.id.textView);
-        textView.setText("Hello World!");
+    public void chooseNumber(View view){
+        TextView textView = findViewById(R.id.textView3);
+        int number = new Random().nextInt(11);
+
+        textView.setText("Número: " + number);
     }
 }
