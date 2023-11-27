@@ -10,20 +10,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Clique abaixo!"
+        android:text="Escolha um número entre 1 e 10"
         android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="25dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="49dp"
-        android:text="clique aqui"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:text="jogar"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum número selecionado"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="213dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
